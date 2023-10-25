@@ -1,0 +1,69 @@
+<html>
+<head>
+ <title>Encuesta</title>
+ <style>
+    body {
+      background-color: #2e2e2e;
+    }
+
+    #encuesta {
+      width: 550px;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid black;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      float: right;
+    }
+
+    .imagenes {
+      display: flex;
+      justify-content: space-around;
+    }
+ </style>
+</head>
+<body>
+ <div id="encuesta">
+    <h1>¿Qué tiene conlleva mas dificultad?</h1>
+    <form>
+      <input type="radio" name="encuesta" value="3_champions"> 3 Champions seguidas
+      <input type="radio" name="encuesta" value="sextete"> Sextete
+      <input type="submit" value="Votar">
+    </form>
+
+    <div class="imagenes">
+      <img src="https://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/1.png" alt="Real Madrid" width="230">
+      <img src="https://images.daznservices.com/di/library/DAZN_News/b8/37/fc-barcelona-la-liga_1jxdxq19a7z4i1mdvawqvnk2js.jpg?t=-2107146871" alt="FC Barcelona" width="300">
+    </div>
+
+    <?php
+    if (isset($_POST['encuesta'])) {
+      $votos = $_POST['encuesta'];
+
+      if ($votos == '3_champions') {
+        echo "Has votado por 3 Champions seguidas.";
+      } else {
+        echo "Has votado por un sextete.";
+      }
+    }
+    ?>
+ </div>
+<footer style="position: absolute; bottom: 0;">
+<p>Copyright &copy; Gonzalo Hidalgo "El matasuegras"</p>
+</footer>
+</body>
+</html>

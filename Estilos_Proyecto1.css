@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url(https://www.lagalerna.com/wp-content/uploads/2020/08/Escudo-Real-Madrid.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: underline;
+  }
+  h1 {
+    font-size: 72px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #000000;
+  }
+  
+ p {
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #000000;
+  }
+  
+a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
